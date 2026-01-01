@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Studi Teknik Komputer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="logo">Teknik Komputer</h1>
+                <ul class="nav-links">
+                    <li><a href="#home" onclick="scrollToSection('home')">Beranda</a></li>
+                    <li><a href="#tentang" onclick="scrollToSection('tentang')">Tentang</a></li>
+                    <li><a href="#kontak" onclick="scrollToSection('kontak')">Kontak</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+   
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Selamat Datang di Program Studi Teknik Komputer</h2>
+            <p>Membangun profesional teknologi masa depan</p>
+        </div>
+    </section>
+
+   
+    <section id="tentang" class="about">
+        <div class="container">
+            <h2>Tentang Program Studi</h2>
+            <div class="about-content">
+                <p>Program Studi Teknik Komputer menyediakan pendidikan berkualitas dalam bidang teknologi komputer, mencakup:</p>
+                <ul class="about-list">
+                    <li>Pemrograman Web & Desktop</li>
+                    <li>Jaringan Komputer</li>
+                    <li>Sistem Operasi</li>
+                    <li>Database Management</li>
+                    <li>Keamanan Siber</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+   
+    <section id="kontak" class="contact">
+        <div class="container">
+            <h2>Hubungi Kami</h2>
+            <form id="contactForm" class="form-container">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" id="nama" name="nama" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telepon">Nomor Telepon:</label>
+                    <input type="tel" id="telepon" name="telepon" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pesan">Pesan:</label>
+                    <textarea id="pesan" name="pesan" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Kirim Pesan</button>
+            </form>
+            <div id="responseMessage" class="response-message"></div>
+        </div>
+    </section>
+
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Program Studi Teknik Komputer. Semua hak dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
