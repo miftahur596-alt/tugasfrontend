@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Studi Teknik Komputer</title>
+    <link rel="stylesheet" href="style.css">  
+</head>
+
+
+<script src="script.js"></script>  
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">🎓 Teknik Komputer</div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#program">Program</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Program Studi Teknik Komputer</h1>
+            <p>Mempersiapkan generasi profesional di bidang teknologi komputer</p>
+        </div>
+    </section>
+
+    <div class="container">
+        
+        <section id="tentang" class="section">
+            <h2>Tentang Program Studi</h2>
+            <p>Program Studi Teknik Komputer adalah program pendidikan tinggi yang fokus pada pengembangan kompetensi mahasiswa dalam bidang perangkat keras komputer, sistem embedded, jaringan komputer, dan teknologi digital. Program ini dirancang untuk menghasilkan lulusan yang siap menghadapi tantangan industri teknologi modern.</p>
+            
+            <div class="cards">
+                <div class="card">
+                    <h3>🎯 Visi</h3>
+                    <p>Menjadi program studi unggul dalam bidang teknik komputer yang menghasilkan lulusan berkompeten dan berintegritas.</p>
+                </div>
+                <div class="card">
+                    <h3>📚 Misi</h3>
+                    <p>Menyelenggarakan pendidikan berkualitas, penelitian inovatif, dan pengabdian masyarakat di bidang teknologi komputer.</p>
+                </div>
+                <div class="card">
+                    <h3>🏆 Akreditasi</h3>
+                    <p>Program studi telah terakreditasi dengan nilai sangat baik dan diakui secara nasional maupun internasional.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Program Section -->
+        <section id="program" class="section">
+            <h2>Mata Kuliah</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>💻 Arsitektur Komputer</h3>
+                    <p>Mempelajari struktur dan organisasi sistem komputer, prosesor, memori, dan sistem input/output.</p>
+                </div>
+                <div class="card">
+                    <h3>🔌 Sistem Embedded</h3>
+                    <p>Pengembangan sistem komputer yang tertanam dalam perangkat elektronik untuk aplikasi khusus.</p>
+                </div>
+                <div class="card">
+                    <h3>🌐 Jaringan Komputer</h3>
+                    <p>Desain, implementasi, dan manajemen jaringan komputer lokal maupun global.</p>
+                </div>
+                <div class="card">
+                    <h3>🤖 Internet of Things</h3>
+                    <p>Pengembangan sistem IoT untuk menghubungkan perangkat fisik dengan internet.</p>
+                </div>
+                <div class="card">
+                    <h3>🔒 Keamanan Sistem</h3>
+                    <p>Implementasi keamanan pada sistem komputer dan jaringan dari ancaman cyber.</p>
+                </div>
+                <div class="card">
+                    <h3>📱 Teknologi Mobile</h3>
+                    <p>Pengembangan aplikasi dan sistem untuk perangkat mobile dan komputasi bergerak.</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="kontak" class="section">
+            <h2>Hubungi Kami</h2>
+            <div id="alertBox" class="alert"></div>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap *</label>
+                    <input type="text" id="nama" name="nama" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telepon">Nomor Telepon *</label>
+                    <input type="tel" id="telepon" name="telepon" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="minat">Minat Program *</label>
+                    <select id="minat" name="minat" required>
+                        <option value="">Pilih Program</option>
+                        <option value="arsitektur">Arsitektur Komputer</option>
+                        <option value="embedded">Sistem Embedded</option>
+                        <option value="jaringan">Jaringan Komputer</option>
+                        <option value="iot">Internet of Things</option>
+                        <option value="keamanan">Keamanan Sistem</option>
+                        <option value="mobile">Teknologi Mobile</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="pesan">Pesan</label>
+                    <textarea id="pesan" name="pesan"></textarea>
+                </div>
+
+                <button type="submit" class="btn">Kirim Pesan</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Program Studi Teknik Komputer. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
